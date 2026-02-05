@@ -198,7 +198,7 @@ function main() {
         
         // Quantity validation: must be in range 1-10
         if (qty < 1 || qty > 10) {
-            howError("Quantity must be between 1 and 10.");
+            showError("Quantity must be between 1 and 10.");
             return;
         }
         
