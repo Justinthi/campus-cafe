@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Campus Café | Quote Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="head panel">
+        <h1>Campus Café</h1>
+        <img
+            src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?w=1200&h=400&fit=crop"
+            alt="Coffee cups on table"
+        />
+        <p class="muted">Banner photo: Unsplash | Nathan Dumlao</p>
+        </header>
+        
+        <nav class="nav panel">
+        <h2>Sections</h2>
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#quote">Get Quote</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+        </nav>
+        
+        <main class="content panel">
+        <section id="menu">
+            <h2>Menu</h2>
+            <p class="muted">Inputs are collected using dialogs.</p>
+            
+            <div class="menu-grid">
+            <article>
+                <h3>☕ Coffee</h3>
+                <p class="muted">Freshly brewed coffee made from premium beans</p>
+                <p class="price">$3.25</p>
+            </article>
+            
+            <article>
+                <h3>🥪 Sandwich</h3>
+                <p class="muted">Artisan sandwiches made with fresh ingredients</p>
+                <p class="price">$8.50</p> 
+            </article>
+            
+            <article>
+                <h3>🥗 Salad</h3>
+                <p class="muted">Garden salads with seasonal vegetables and homemade dressing</p>
+                <p class="price">$7.25</p>
+            </article>
+            </div>
+        </section>
+        
+        <section id="quote" style="margin-top:18px;">
+            <h2>Get a Quote</h2>
+            <p class="muted">Click Get Quote and enter values in dialogs.</p>
+            <div class="actions">
+            <button id="calcBtn" type="button">Get Quote</button>
+            <button id="resetBtn" type="button">Reset</button>
+            </div>
+        </section>
+        
+        <section id="about" style="margin-top:18px;">
+            <h2>About</h2>
+            <p>Campus Café is your go-to spot for quality coffee, fresh sandwiches, and healthy salads right on campus. We're dedicated to serving students and faculty with convenient, affordable meals made from locally-sourced ingredients. Whether you need a quick caffeine fix between classes or a satisfying lunch, we've got you covered. Our quote calculator makes it easy to see your total with student discounts and eco-friendly options.</p>
+        </section>
+        </main>
+        
+        <!-- Receipt Pannel -->
+        <aside class="sidebar panel">
+        <h3>Receipt</h3>
+        <pre id="display">No order data.</pre>
+        </aside>
+        
+        <!-- Weather Pannel -->
+        <aside class="ads panel">
+        <h3>Local Weather</h3>
+        <div id="weatherBox" class="weather">Loading weather....</div>
+        </aside>
+        
+        <footer class="footer panel">
+        <p>&copy; 2026 Campus Café</p>
+        <p class="muted">Weather data by Open-Meteo (CC BY 4.0).</p>
+        <p class="muted">Banner photo from Unsplash.</p>
+        </footer>
+    </div>
+    
+    <script src="scripts/cafe.js"></script>
+</body>
+</html>
